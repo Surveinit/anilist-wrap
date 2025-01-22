@@ -6,6 +6,8 @@ body {
 }
 
 .section-title {
+  font-family: monospace;
+  text-align: center;
   color: white;
   font-size: 24px;
   margin-bottom: 20px;
@@ -29,6 +31,7 @@ body {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 2px;
 }
 
 .card-title {
@@ -43,6 +46,17 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo h2 {
+  font-family: monospace;
+  color: white;
 }
 
 /* Responsive Design */
