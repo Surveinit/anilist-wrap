@@ -3,11 +3,11 @@
   <% if @error %>
     <p><%= @error %></p>
   <% else %>
-    <% @top_anime.each do |anime| %>
+    <% @top_anime.each_with_index do |anime, index| %>
       <div class="card">
         <a href="<%= anime['siteUrl'] %>" >
           <img src="<%= anime['coverImage']['large'] %>" alt="<%= anime['title']['romaji'] %>">
-          <div class="card-title"><%= anime['title']['romaji'] %></div>
+          <div class="card-title"><%= index + 1 %>. <%= anime['title']['romaji'] %></div>
         </a>
       </div>
     <% end %>
@@ -19,11 +19,11 @@
   <% if @error %>
     <p><%= @error %></p>
   <% else %>
-    <% @top_manga.each do |manga| %>
+    <% @top_manga.each_with_index do |manga, index| %>
       <div class="card">
         <a href="<%= manga['siteUrl'] %>" >
           <img src="<%= manga['coverImage']['large'] %>" alt="<%= manga['title']['romaji'] %>">
-          <div class="card-title"><%= manga['title']['romaji'] %></div>
+          <div class="card-title"><%= index + 1 %>. <%= manga['title']['romaji'] %></div>
         </a>
       </div>
     <% end %>
