@@ -7,7 +7,7 @@ class AnilistService
   def self.fetch_top_anime_and_manga
     query = <<~GRAPHQL
             {
-      anime: Page(perPage: 20) {
+      anime: Page(perPage: 30) {
         media(type: ANIME, sort: POPULARITY_DESC) {
           title {
             romaji
@@ -16,7 +16,7 @@ class AnilistService
           siteUrl
         }
       }
-      manga: Page(perPage: 20) {
+      manga: Page(perPage: 30) {
         media(type: MANGA, sort: POPULARITY_DESC) {
           title {
             romaji
