@@ -2,22 +2,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #1b1b1f;
 }
 
 .section-title {
+  color: white;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 
 .card {
-  background: white;
+  background: #191919;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -34,6 +35,7 @@ body {
 }
 
 .card-title {
+  color: white;
   font-size: 16px;
   text-align: center;
   padding: 10px;
