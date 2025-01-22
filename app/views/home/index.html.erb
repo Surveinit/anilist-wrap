@@ -1,2 +1,31 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Top 20 Anime</h1>
+<ul>
+  <% if @error %>
+    <p><%= @error %></p>
+  <% else %>
+    <% @top_anime.each do |anime| %>
+      <li>
+        <a href="<%= anime['siteUrl'] %>" target="_blank">
+          <img src="<%= anime['coverImage']['large'] %>" alt="<%= anime['title']['romaji'] %>">
+          <p><%= anime['title']['romaji'] %></p>
+        </a>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
+<h1>Top 20 Manga</h1>
+<ul>
+  <% if @error %>
+    <p><%= @error %></p>
+  <% else %>
+    <% @top_manga.each do |manga| %>
+      <li>
+        <a href="<%= manga['siteUrl'] %>" target="_blank">
+          <img src="<%= manga['coverImage']['large'] %>" alt="<%= manga['title']['romaji'] %>">
+          <p><%= manga['title']['romaji'] %></p>
+        </a>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
