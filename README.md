@@ -5,7 +5,7 @@ The app showcases images, titles, and links to the Anilist website for each anim
 
 ### Screenshots
 ![Blur SS](./app/assets/images/blur_ss.png)
-![unBlur SS](./app/assets/images/unblur_ss.png)
+![Video Demo](./app/assets/images/video_demo.gif)
 
 ### Features
 
