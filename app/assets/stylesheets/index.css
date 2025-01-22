@@ -20,11 +20,13 @@ body {
 }
 
 .card {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, filter 0.6s ease;
+  filter: blur(100px);
 }
 
 .card:hover {
   transform: translateY(-5px);
+  filter: blur(0px);
 }
 
 .card img {
