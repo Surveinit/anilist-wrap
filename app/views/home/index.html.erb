@@ -5,7 +5,7 @@
   <% else %>
     <% @top_anime.each do |anime| %>
       <div class="card">
-        <a href="<%= anime['siteUrl'] %>" target="_blank">
+        <a href="<%= anime['siteUrl'] %>" >
           <img src="<%= anime['coverImage']['large'] %>" alt="<%= anime['title']['romaji'] %>">
           <div class="card-title"><%= anime['title']['romaji'] %></div>
         </a>
@@ -21,7 +21,7 @@
   <% else %>
     <% @top_manga.each do |manga| %>
       <div class="card">
-        <a href="<%= manga['siteUrl'] %>" target="_blank">
+        <a href="<%= manga['siteUrl'] %>" >
           <img src="<%= manga['coverImage']['large'] %>" alt="<%= manga['title']['romaji'] %>">
           <div class="card-title"><%= manga['title']['romaji'] %></div>
         </a>
