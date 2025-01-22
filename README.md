@@ -4,8 +4,8 @@ Anilist-wrap is a simple Rails application that fetches and displays the top 20 
 The app showcases images, titles, and links to the Anilist website for each anime and manga.
 
 ### Screenshots
-![Blur SS](https://s4.anilist.co/file/anilistcdn/media/anime/banner/116674-l2YlIyJzvGSV.jpg "a title")
-![Blur SS](https://s4.anilist.co/file/anilistcdn/media/anime/banner/116674-l2YlIyJzvGSV.jpg "a title")
+![Blur SS](./app/assets/images/blur_ss.png)
+![unBlur SS](./app/assets/images/unblur_ss.png)
 
 ### Features
 
