@@ -8,28 +8,24 @@ class AnilistService
     query = <<~GRAPHQL
             {
       anime: Page(perPage: 20) {
-      media(type: ANIME, sort: POPULARITY_DESC) {
-      title {
-      romaji
-      }
-      coverImage {
-      large
-      }
-      siteUrl
-      }
+        media(type: ANIME, sort: POPULARITY_DESC) {
+          title {
+            romaji
+          }
+          bannerImage
+          siteUrl
+        }
       }
       manga: Page(perPage: 20) {
-      media(type: MANGA, sort: POPULARITY_DESC) {
-      title {
-      romaji
+        media(type: MANGA, sort: POPULARITY_DESC) {
+          title {
+            romaji
+          }
+          bannerImage
+          siteUrl
+        }
       }
-      coverImage {
-      large
-      }
-      siteUrl
-      }
-      }
-      }
+    }
     GRAPHQL
 
     response = HTTParty.post(BASE_URL, headers: { "Content-Type" => "application/json" }, body: { query: query }.to_json)

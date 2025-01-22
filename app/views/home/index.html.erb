@@ -6,7 +6,7 @@
     <% @top_anime.each_with_index do |anime, index| %>
       <div class="card">
         <a href="<%= anime['siteUrl'] %>" >
-          <img src="<%= anime['coverImage']['large'] %>" alt="<%= anime['title']['romaji'] %>">
+          <img src="<%= anime['bannerImage']['large'] %>" alt="<%= anime['title']['romaji'] %>">
           <div class="card-title"><%= index + 1 %>. <%= anime['title']['romaji'] %></div>
         </a>
       </div>
@@ -22,7 +22,7 @@
     <% @top_manga.each_with_index do |manga, index| %>
       <div class="card">
         <a href="<%= manga['siteUrl'] %>" >
-          <img src="<%= manga['coverImage']['large'] %>" alt="<%= manga['title']['romaji'] %>">
+          <img src="<%= manga['bannerImage']['large'] %>" alt="<%= manga['title']['romaji'] %>">
           <div class="card-title"><%= index + 1 %>. <%= manga['title']['romaji'] %></div>
         </a>
       </div>
